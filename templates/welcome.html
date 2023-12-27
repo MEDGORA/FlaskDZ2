@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        {% block title %}
+            Страница приветствия
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="container-fluid">
+
+    {% block content %}
+        Приветствую тебя, пользователь {{name}}
+    {% endblock %}
+
+    {% block exit %}
+    <form method="post">
+        <input type="submit" value="Выход">
+    </form>
+    {% endblock %}
+</div>
+
+
+</body>
+</html>
